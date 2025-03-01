@@ -12,9 +12,9 @@
 ### Состояние репозитория
 `git status`
 ### Добавление файлов
-`git add hello.txt`
+`git add hello.txt`  
 или  
-`git add --all`
+`git add --all`  
 или  
 `git add .`
 ### Коммит
@@ -23,8 +23,8 @@
 `echo "Изучаю работу веток" >> README.md`  
 `git add . && git commit -m "Обновить README"`
 ### Добавление ссылки на удалённый репозитарий
-`git remote add origin <SSH_адрес_проекта>`
-`git branch -M main`
+`git remote add origin <SSH_адрес_проекта>`  
+`git branch -M main`  
 `git push -u origin main`
 ### Отправление изменений в удалённый репозиторий
 `git push`
