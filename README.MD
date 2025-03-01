@@ -18,16 +18,16 @@
 или  
 `git add .`
 ### Коммит
-`git commit -m "Мой первый коммит"`
+`git commit -m "Мой первый коммит"`  
+Можно объединять команды в одной строке при помощи &&, например:  
+`echo "Изучаю работу веток" >> README.md`  
+`git add . && git commit -m "Обновить README"`
 ### Добавление ссылки на удалённый репозитарий
 `git remote add origin <SSH_адрес_проекта>`
 `git branch -M main`
 `git push -u origin main`
 ### Отправление изменений в удалённый репозиторий
-`git push`  
-Можно объединять команды в одной строке при помощи &&, например:  
-`echo "Изучаю работу веток" >> README.md`  
-`git add . && git commit -m "Обновить README"`
+`git push`
 ### Отправление отдельной ветки в удалённый репозиторий
 `git push -u origin merge-request`  
 Ключ -u (или --set-upstream) устанавливает отслеживаемую ветку — после выполнения этой команды локальная ветка merge-request будет связана с удалённой веткой origin/merge-request, что позволит в будущем просто использовать git pull и git push, без указания origin merge-request.
