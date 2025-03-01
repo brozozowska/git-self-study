@@ -29,7 +29,7 @@
 Ключ -u (или --set-upstream) устанавливает отслеживаемую ветку — после выполнения этой команды локальная ветка merge-request будет связана с удалённой веткой origin/merge-request, что позволит в будущем просто использовать git pull и git push, без указания origin merge-request.
 ## Клонирование
 Для клонирования сперва нужно скопировать адрес репозитория:
-
+![](https://pictures.s3.yandex.net/resources/05_01_github_clone_1_1707941769.png)
 Далее:  
 `git clone git@github.com:<ВАШ НИКНЕЙМ>/first-project-git.git second-project-git`
 ## Пул
@@ -59,13 +59,15 @@
 Перед тем как начать слияние, нужно перейти в ветку, куда должны добавиться изменения. Обычно это главная ветка.  
 `git checkout main`
 `git merge new_branch`
-
+![](https://pictures.s3.yandex.net/resources/6-branch-merge_1707942502.png)
 ## Pull request
 Создание и мёрдж веток – инструменты программы Git. Механизм Pull Request – функция, предоставляемая платформой GitHub, который позволяет предлагать изменения и обсуждать их перед их интеграцией в основную ветку проекта.
-
-
-
-
-
+![](https://pictures.s3.yandex.net/resources/6-pull-request-tab_1707942665.png)
+![](https://pictures.s3.yandex.net/resources/6-pull-request-button_1707942702.png)
+![](https://pictures.s3.yandex.net/resources/6-pull-request-select_branch_1707942726.png)
+![](https://pictures.s3.yandex.net/resources/6-pull-request-select-branch-continue_1707942758.png)
+![](https://pictures.s3.yandex.net/resources/6-pull-request-create-pr_1707942791.png)
 Если нужно что-то добавить или исправить — можно в любой момент добавить дополнительные коммиты в ветку, они автоматически попадут в открытый пулл-реквест после пуша.  
 Осталось только нажать Merge pull request. Это объединит ветку с изменениями и ветку main.
+![](https://pictures.s3.yandex.net/resources/6-pull-request-merge_1707942821.png)
+![](https://pictures.s3.yandex.net/resources/6-pull-request-merged_1707942848.png)
